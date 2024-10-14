@@ -1,0 +1,22 @@
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.candidate-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.mat-form-field {
+  margin-bottom: 16px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+}

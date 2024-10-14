@@ -1,0 +1,26 @@
+<div>
+  <h2>Upload Candidates</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label>Name:</label>
+    <input type="text" [(ngModel)]="name" name="name" required />
+
+    <label>Surname:</label>
+    <input type="text" [(ngModel)]="surname" name="surname" required />
+
+    <label>Seniority:</label>
+    <input type="text" [(ngModel)]="seniority" name="seniority" required />
+
+    <label>Years of Experience:</label>
+    <input type="number" [(ngModel)]="yearsOfExperience" name="yearsOfExperience" required />
+
+    <label>Availability:</label>
+    <input type="checkbox" [(ngModel)]="availability" name="availability" />
+
+    <label>Select File:</label>
+    <input type="file" (change)="onFileChange($event)" required />
+
+    <button type="submit">Upload Candidates</button>
+  </form>
+
+  <div *ngIf="message">{{ message }}</div>
+</div>
